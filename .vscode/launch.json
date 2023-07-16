@@ -5,6 +5,13 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "QuickSort",
+            "request": "launch",
+            "mainClass": "QuickSort",
+            "projectName": "GrokkingAlgorithms_ca7e8a8"
+        },
+        {
             "name": "Python: Current File",
             "type": "python",
             "request": "launch",
