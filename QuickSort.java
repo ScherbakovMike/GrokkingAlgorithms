@@ -1,5 +1,5 @@
 public class QuickSort {
-    
+
     static int partition(int array[], int start, int end) {
         var pivot = array[end]; // pivot element
         var leftIndex = start;
