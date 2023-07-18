@@ -1,6 +1,6 @@
 public class QuickSort {
 
-    static int partition(int array[], int start, int end) {
+    static int partition(int[] array, int start, int end) {
         var pivot = array[end]; // pivot element
         var leftIndex = start;
         var rightIndex = end;
@@ -22,8 +22,7 @@ public class QuickSort {
         array[right] = buf;
     }
 
-    static void quick(int a[], int start, int end)
-    {
+    static void quick(int[] a, int start, int end) {
         if (start < end) {
             int p = partition(a, start, end);
             quick(a, start, p - 1);
@@ -31,7 +30,7 @@ public class QuickSort {
         }
     }
 
-    static void printArr(int a[], int n) {
+    static void printArr(int[] a, int n) {
         int i;
         for (i = 0; i < n; i++)
             System.out.print(a[i] + " ");
@@ -39,9 +38,9 @@ public class QuickSort {
     }
 
     public static void main(String[] args) {
-        int array[] = { 6, 5, 4, 3, 2, 1 };
+        int[] array = {6, 5, 4, 3, 2, 1};
         printArr(array, array.length);
-        quick(array, 0, array.length-1);
+        quick(array, 0, array.length - 1);
         printArr(array, array.length);
     }
 }

@@ -1,6 +1,6 @@
 public class SelectionSort {
     public static void main(String[] args) {
-        var array = new int[] { 22, 1, 3, 99, 8 };
+        var array = new int[]{22, 1, 3, 99, 8};
         for (int i = 0; i < (array.length - 1); i++) {
             var smallestIndex = findSmallest(array, i);
             var buf = array[i];
